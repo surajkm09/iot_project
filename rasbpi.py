@@ -6,7 +6,7 @@ GPIO.setup(5,GPIO.OUT)
 true = 1
 while(true):
                 try:
-                        response = urllib2.urlopen('http://192.168.1.8/xampp/IOTautomation/buttonStatus.php')
+                        response = urllib2.urlopen('www.ninjasuresh/buttonStatus.php')
                         status = response.read()
                 except urllib2.HTTPError, e:
                                         print e.code
